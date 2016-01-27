@@ -1,0 +1,29 @@
+//VARIABLES
+$defaultSize: 16px;
+$defaultFont: Helvetica, sans-serif;
+$defaultColor: #060;
+$defaultBackground: #c0ebc0;
+
+//STYLES
+#content{
+    width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em 0;
+    font: $defaultSize $defaultFont;
+    color: $defaultColor;
+    background: $defaultBackground;
+}
+
+h1{
+    font-size: $defaultSize * 3;
+}
+.icon{
+    $colorIcon: #f5f536;
+    font-size: $defaultSize * 3;
+    line-height: $defaultSize * 4;
+    display: inline-block;
+    width: $defaultSize * 4;
+    heght: $defaultSize * 4;
+    background: $colorIcon;
+}

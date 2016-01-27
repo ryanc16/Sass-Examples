@@ -1,0 +1,52 @@
+#monochrome .chip {
+  width: 4rem;
+  height: 4rem;
+  border: solid 1px black;
+  display: inline-block;
+  background-color: #696; }
+  #monochrome .chip:nth-of-type(2) {
+    background-color: #e0ebe0; }
+  #monochrome .chip:nth-of-type(3) {
+    background-color: #3d5c3d; }
+  #monochrome .chip:nth-of-type(4) {
+    background-color: #4db34d; }
+  #monochrome .chip:nth-of-type(5) {
+    background-color: #85e085; }
+  #monochrome .chip:nth-of-type(6) {
+    background-color: #996699; }
+
+#analogous .chip {
+  width: 4rem;
+  height: 4rem;
+  border: solid 1px black;
+  display: inline-block;
+  background-color: #966; }
+  #analogous .chip:nth-of-type(2) {
+    background-color: #ebe0e0; }
+  #analogous .chip:nth-of-type(3) {
+    background-color: #5c3d3d; }
+  #analogous .chip:nth-of-type(4) {
+    background-color: #b34d4d; }
+  #analogous .chip:nth-of-type(5) {
+    background-color: #b3804d; }
+  #analogous .chip:nth-of-type(6) {
+    background-color: #669999; }
+
+#complementary .chip {
+  width: 4rem;
+  height: 4rem;
+  border: solid 1px black;
+  display: inline-block;
+  background-color: #336; }
+  #complementary .chip:nth-of-type(2) {
+    background-color: #9999cc; }
+  #complementary .chip:nth-of-type(3) {
+    background-color: #222244; }
+  #complementary .chip:nth-of-type(4) {
+    background-color: #242475; }
+  #complementary .chip:nth-of-type(5) {
+    background-color: #dddd22; }
+  #complementary .chip:nth-of-type(6) {
+    background-color: #666633; }
+
+/*# sourceMappingURL=styles.css.map */

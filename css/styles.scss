@@ -1,0 +1,101 @@
+//VARIABLES
+$monoColorBase: #696;
+$monoColorBackground: lighten($monoColorBase, 40);
+$monoColorDark:       darken($monoColorBase, 20);
+$monoColorSat:        saturate($monoColorBase, 20);
+$monoColorHighlight:  lighten(saturate($monoColorBase,40),20);
+$monoColorAccent:     invert($monoColorBase);
+
+$analogousColorBase: #966;
+$analogousColorBackground: lighten($analogousColorBase, 40);
+$analogousColorDark:       darken($analogousColorBase, 20);
+$analogousColorSat:        saturate($analogousColorBase, 20);
+$analogousColorHighlight:  saturate(adjust-color($analogousColorBase,$hue:30),20);
+$analogousColorAccent:     invert($analogousColorBase);
+
+$complementaryColorBase: #336;
+$complementaryColorBackground: lighten($complementaryColorBase, 40);
+$complementaryColorDark:       darken($complementaryColorBase, 10);
+$complementaryColorSat:        saturate($complementaryColorBase, 20);
+$complementaryColorHighlight:  lighten(saturate(adjust-color($complementaryColorBase,$hue:180),40),20);
+$complementaryColorAccent:     invert($complementaryColorBackground);
+
+//MONOCHROME STYLES
+#monochrome{
+    .chip{
+        width: 4rem;
+        height: 4rem;
+        border: solid 1px black;
+        display: inline-block;
+        background-color: $monoColorBase;
+        &:nth-of-type(2){
+            background-color: $monoColorBackground;
+        }
+        &:nth-of-type(3){
+            background-color: $monoColorDark;
+        }
+        
+        &:nth-of-type(4){
+            background-color: $monoColorSat;
+        }
+        &:nth-of-type(5){
+            background-color: $monoColorHighlight;
+        }
+        &:nth-of-type(6){
+            background-color: $monoColorAccent;
+        }
+    }
+}
+
+//ANALOGOUS STYLES
+#analogous{
+    .chip{
+        width: 4rem;
+        height: 4rem;
+        border: solid 1px black;
+        display: inline-block;
+        background-color: $analogousColorBase;
+        &:nth-of-type(2){
+            background-color: $analogousColorBackground;
+        }
+        &:nth-of-type(3){
+            background-color: $analogousColorDark;
+        }
+        
+        &:nth-of-type(4){
+            background-color: $analogousColorSat;
+        }
+        &:nth-of-type(5){
+            background-color: $analogousColorHighlight;
+        }
+        &:nth-of-type(6){
+            background-color: $analogousColorAccent;
+        }
+    }
+}
+//COMPLEMENTARY STYLES
+#complementary{
+    .chip{
+        width: 4rem;
+        height: 4rem;
+        border: solid 1px black;
+        display: inline-block;
+        background-color: $complementaryColorBase;
+        &:nth-of-type(2){
+            background-color: $complementaryColorBackground;
+        }
+        &:nth-of-type(3){
+            background-color: $complementaryColorDark;
+        }
+        
+        &:nth-of-type(4){
+            background-color: $complementaryColorSat;
+        }
+        &:nth-of-type(5){
+            background-color: $complementaryColorHighlight;
+        }
+        &:nth-of-type(6){
+            background-color: $complementaryColorAccent;
+        }
+    }
+}
